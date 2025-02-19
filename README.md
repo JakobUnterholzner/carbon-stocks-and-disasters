@@ -1,7 +1,17 @@
 # Natural Disasters and Carbon Stocks in Forest.
 
 ## Description
-This project visualizes the Carbon stocks in Fortest and Disasters across Countries.
+This project visualizes the Carbon stocks in Fortest and Disasters across Countries. It was 
+developed during my studies of "Visualization and Visual Data Analysis" at the University of Vienna.
+The dashboard is designed to help climate activists from the WWF in the following three tasks:
+
+• Task 1: Investigating the relative impact of climate change on natural habitats worldwide, focusing on
+natural disasters and forest cover.
+
+• Task 2: Identifying areas with the largest carbon stocks in forests to prioritize protective actions.
+
+• Task 3: Locating regions with the most significant relative changes in forestation to identify fast-
+changing environments where immediate intervention might yield the greatest benefits.
 
 
 ## Project Structure
