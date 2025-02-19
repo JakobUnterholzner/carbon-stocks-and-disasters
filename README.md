@@ -13,6 +13,9 @@ natural disasters and forest cover.
 • Task 3: Locating regions with the most significant relative changes in forestation to identify fast-
 changing environments where immediate intervention might yield the greatest benefits.
 
+The dashboard is also published as git hub page:
+https://jakobunterholzner.github.io/carbon-stocks-and-disasters/
+
 
 ## Project Structure
 - `dist`: Distribution build code.
@@ -47,7 +50,7 @@ npm run dev
 ```
 
 ### Compiles and minifies for production
-This command will create a /dist folder in your project and output compiled files (html, js, css etc.) that you can upload to the Almighty server
+This command will create a /dist folder in your project and output compiled files (html, js, css etc.).
 ```
 npm run build
 ```
