@@ -121,12 +121,12 @@ const createBarChart = () => {
 
     gradient.append('stop')
       .attr('offset', `${d.meanForestAreaShare}%`)
-      .attr('stop-color', d3.schemeCategory10[2])
+      .attr('stop-color', d3.schemePaired[3])
       .attr('stop-opacity', 0.9);
 
     gradient.append('stop')
       .attr('offset', `${d.meanForestAreaShare}%`)
-      .attr('stop-color', d3.schemeCategory10[0])
+      .attr('stop-color', d3.schemePaired[2])
       .attr('stop-opacity', 0.9);
   });
 
@@ -165,7 +165,7 @@ const createBarChart = () => {
       .attr('x', d => xScale(d.ISO3) + xScale.bandwidth() / 2)
       .attr('y', d => yScale(d.normalizedCarbonStocks * d.meanForestAreaShare / 100) - 5)
       .attr('text-anchor', 'middle')
-      .attr('fill', 'white')
+      .attr('fill', 'black')
       .text(d => `${d.meanForestAreaShare.toFixed(0)}%`);
   }
 
@@ -261,7 +261,7 @@ if (transformedData.length > 4) {
     .attr('y', 0)
     .attr('width', 20)
     .attr('height', 20)
-    .attr('fill', 'green');
+    .attr('fill', d3.schemePaired[3]);
 
   legend.append('text')
     .attr('x', 50)
@@ -276,7 +276,7 @@ if (transformedData.length > 4) {
     .attr('y', 30)
     .attr('width', 20)
     .attr('height', 20)
-    .attr('fill', 'steelblue');
+    .attr('fill', d3.schemePaired[2]);
 
   legend.append('text')
     .attr('x', 50)

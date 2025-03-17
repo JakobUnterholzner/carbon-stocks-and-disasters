@@ -114,7 +114,7 @@ const createBarChart = () => {
 
   const colorScale = d3.scaleOrdinal()
     .domain(disasterTypes)
-    .range(d3.schemeCategory10);
+    .range(d3.schemeSet2.slice(2));
 
   // Get the actual width of the SVG element
   const svgElement = svg.node();

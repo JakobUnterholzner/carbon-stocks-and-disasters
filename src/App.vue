@@ -1,8 +1,5 @@
 <template>
-  <div id="app">    
-    <header>
-      <h1>Climate-related Disasters and Carbon Stocks</h1>
-    </header>
+  <div id="app">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 view">

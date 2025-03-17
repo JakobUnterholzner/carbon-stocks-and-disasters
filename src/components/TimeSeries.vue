@@ -271,7 +271,7 @@ console.log('Yearly Disaster Data:', yearlyDisasterData);
   // Define custom color scale for disasters
   const colorScale = d3.scaleOrdinal()
     .domain(disasterTypes)
-    .range(d3.schemeCategory10);
+    .range(d3.schemeSet2.slice(2));
 
   // Stack the disaster data
   const stack = d3.stack()

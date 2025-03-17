@@ -44,7 +44,7 @@ const disasterTypes = [
 ];
 const colorScale = d3.scaleOrdinal()
   .domain(disasterTypes)
-  .range(d3.schemeCategory10);
+  .range(d3.schemeSet2.slice(2));
 
 const toggleNormalize = () => {
   store.toggleNormalizeData();
