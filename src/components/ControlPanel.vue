@@ -133,7 +133,7 @@ onMounted(() => {
         .attr('x', 30)
         .attr('y', 15)
         .attr('text-anchor', 'start')
-        .style('font-size', '18px')
+        .style('font-size', '14px')
         .attr('class', `legend-text-${type}`)
         .text(type);
     });
@@ -191,8 +191,8 @@ onMounted(() => {
         .style('border', '1px solid black')
         .style('border-radius', '50%')
         .style('margin-left', example.size > 15 ? '5px' : '40px') // Conditional margin
-        .style('margin-top', `-${example.size}px`)
-        .style('margin-bottom', `-${example.size}px`)
+        .style('margin-top', `-${example.size - 20}px`)
+        .style('margin-bottom', `-${example.size - 20}px`)
         .style('opacity', 0.8)
         .style('flex-shrink', '0'); // Prevent shrinking
 
@@ -244,12 +244,13 @@ onMounted(() => {
 }
 
 .search-container {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   width: 100%; 
 }
 
 .search-input {
   width: 100%; 
+  height: 20px;
   padding: 1px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -258,7 +259,7 @@ onMounted(() => {
 }
 
 .search-feedback {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .normalize-container {
@@ -275,7 +276,7 @@ onMounted(() => {
 }
 
 .normalize-label {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -303,10 +304,10 @@ onMounted(() => {
 
 .legend-container {
   display: flex; 
-  margin-top: 5px;
-  margin-bottom: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   width: 100%; 
-  height: 40%;
+  height: 50%;
 }
 
 .legend-disasters, .legend-size {
@@ -318,19 +319,19 @@ onMounted(() => {
 }
 
 .data-sources-container {
-  margin-top: 2px; 
+  margin-top: 1px; 
   width: 100%; 
 }
 
 .data-sources-title {
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 14px;
+  margin-top: 1px;
   font-weight: bold;
   text-align: left;
 }
 
 .data-sources {
-  font-size: 16px;
+  font-size: 12px;
   text-align: left;
   color: blue;
   text-decoration: underline;
