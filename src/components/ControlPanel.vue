@@ -133,7 +133,7 @@ onMounted(() => {
         .attr('x', 30)
         .attr('y', 15)
         .attr('text-anchor', 'start')
-        .style('font-size', '20px')
+        .style('font-size', '14px')
         .attr('class', `legend-text-${type}`)
         .text(type);
     });
@@ -155,7 +155,7 @@ onMounted(() => {
     sizeLegend.append('text')
         .attr('class', 'size-legend-title')
         .text('Country Size')
-        .style('font-size', '18px')
+        .style('font-size', '16px')
         .style('font-weight', 'bold')
         .style('text-align', 'left');
 
@@ -180,7 +180,7 @@ onMounted(() => {
     
     legendItem.append('div')
         .attr('class', 'size-legend-label')
-        .style('font-size', '18px')
+        .style('font-size', '16px')
         .text(example.label);
 
     legendItem.append('div')
@@ -191,8 +191,8 @@ onMounted(() => {
         .style('border', '1px solid black')
         .style('border-radius', '50%')
         .style('margin-left', example.size > 15 ? '5px' : '40px') // Conditional margin
-        .style('margin-top', `-${example.size}px`)
-        .style('margin-bottom', `-${example.size}px`)
+        .style('margin-top', `-${example.size - 20}px`)
+        .style('margin-bottom', `-${example.size - 20}px`)
         .style('opacity', 0.8)
         .style('flex-shrink', '0'); // Prevent shrinking
 
@@ -216,7 +216,7 @@ onMounted(() => {
         .append('br')
         .attr('class', 'data-source-link')
         .attr('text-align', 'left')
-        .attr('font-size', '20px')
+        .attr('font-size', '16px')
     });
 
 
@@ -244,36 +244,41 @@ onMounted(() => {
 }
 
 .search-container {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   width: 100%; 
 }
 
 .search-input {
   width: 100%; 
-  padding: 5px;
-  font-size: 14px;
+  height: 20px;
+  padding: 1px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; 
 }
 
+.search-feedback {
+  font-size: 14px;
+}
+
 .normalize-container {
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #normalize-checkbox {
   margin-right: 10px;
   transform: scale(1.5);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .normalize-label {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .custom-tooltip {
@@ -285,7 +290,7 @@ onMounted(() => {
   border: 1px solid #ccc;
   border-radius: 4px;
   white-space: normal;
-  font-size: 14px;
+  font-size: 16px;
   z-index: 100;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   pointer-events: none;
@@ -299,9 +304,10 @@ onMounted(() => {
 
 .legend-container {
   display: flex; 
-  margin-top: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   width: 100%; 
-  height: 40%;
+  height: 50%;
 }
 
 .legend-disasters, .legend-size {
@@ -313,18 +319,19 @@ onMounted(() => {
 }
 
 .data-sources-container {
-  margin-top: 0px; 
+  margin-top: 1px; 
   width: 100%; 
 }
 
 .data-sources-title {
-  font-size: 16px;
+  font-size: 14px;
+  margin-top: 1px;
   font-weight: bold;
   text-align: left;
 }
 
 .data-sources {
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   color: blue;
   text-decoration: underline;
